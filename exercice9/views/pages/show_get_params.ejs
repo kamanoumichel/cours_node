@@ -1,0 +1,29 @@
+<h2>
+    Liste des données GET reçues :
+
+</h2>
+    <ul>
+        
+            <% if (typeof query.day !== 'undefined'){%>
+                <li>
+                    <%= query.day %>
+                </li>
+                
+            <% } %>
+
+
+            <% if (typeof query.month !== 'undefined'){%>
+                <li>
+                    <%= query.month %>
+                </li>
+                
+            <% } %>
+  
+            <% if (typeof query.year !== 'undefined'){%>
+                <li>
+                     <%= query.year %>
+                </li>
+               
+            <% } %>
+
+    </ul>

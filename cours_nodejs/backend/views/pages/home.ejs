@@ -1,0 +1,40 @@
+<!--%
+//Commebtaire
+user = typeof user !== 'undefined'? user:'bel(le inconnu(e))';
+%-->
+<!--DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test EJS</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body-->
+<!--%- include('../partials/head') %-->
+    <p>Ceci est ma première page en EJS !</p>
+    <h1><% 
+        const safeNickname = typeof nickname !== 'undefined' ? nickname : null;
+        const safeSex = typeof sex !== 'undefined' ? sex : null;
+    %>
+
+    <% if (safeNickname && safeNickname.trim() !== '') { %>
+        <% if (safeSex === 'M') { %>
+            Bonjour Mr <%= safeNickname %>
+        <% } else if (safeSex === 'F') { %>
+            Bonjour Mme <%= safeNickname %>
+        <% } else { %>
+            Bonjour <%= safeNickname %>
+        <% } %>
+    <% } else { %>
+        <% if (safeSex === 'M') { %>
+            Bonjour bel inconnu
+        <% } else if (safeSex === 'F') { %>
+            Bonjour belle inconnue
+        <% } else { %>
+            Bonjour bel(le) inconnu(e)
+        <% } %>
+    <% } %>
+    </h1>
+
+<!--%- include('../partials/foot') %-->

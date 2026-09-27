@@ -1,0 +1,110 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+/* Header */
+.header {
+  background-color: #C0C0C0;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Boutons de navigation */
+.nav {
+  display: flex;
+  gap: 5px;
+}
+
+.btn {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #666666;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.btn.active {
+  background-color: #888888;
+}
+
+.fil_ariane{
+    height: 30px;
+    background-color: #808080 ;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+footer{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Zone de contenu centré */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  overflow-y: auto; /* Permet d'avoir un défilement uniquement sur le contenu si besoin */
+}
+
+/*#content .scrollable{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    overflow: auto;
+     border: 2px solid black; 
+}*/
+
+
+.content h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+}
+
+.hero-image {
+  max-width: 250px;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  background-color: #a6a6a6;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+footer a {
+  color: #2b6cb0;
+  text-decoration: underline;
+}

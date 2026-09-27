@@ -1,0 +1,11 @@
+<h1>Toutes les blagues</h1>
+
+<% content.forEach(item => { %>
+  <div class="card w-80 mb-2 bg-secondary">
+    <div class="card-body">
+      <a href="/jokes/joke/<%= item.id %>" class="text-white" style="text-decoration: none;">
+        <%= item.joke %>
+      </a>
+    </div>
+  </div>
+<% }) %>

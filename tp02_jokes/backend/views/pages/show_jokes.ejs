@@ -1,0 +1,12 @@
+
+<% if (joke) { %>
+  <div class="card w-80 mb-2 bg-secondary text-dark">
+    <div class="card-body">
+      <p class="card-text"><%= joke.joke %></p>
+    </div>
+  </div>
+  <a href="/jokes/list" class="btn btn-primary">Retour à la liste</a>
+<% } else { %>
+  <p>Blague non trouvée.</p>
+  <a href="/jokes/list" class="btn btn-secondary">Retour à la liste</a>
+<% } %>
